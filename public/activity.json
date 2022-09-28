@@ -30,14 +30,14 @@
       {
         "id": "5",
         "name": "JavaScript",
-        "img": "https://www.google.com/search?q=javascript&sxsrf=ALiCzsZYzaNjbJV5JKvPKqb-fBSB9oAK2Q:1664388993770&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi9kPeVjLj6AhUZEogKHVgdDOgQ_AUoAXoECAMQAw&biw=1536&bih=688&dpr=1.25#imgrc=ZWcHRO6J1JVZPM&imgdii=ru-Pbg5KA5MtWM",
+        "img": "http://devclass.com/wp-content/uploads/2022/08/javascript.webp",
         "description":"JavaScript is a lightweight, interpreted programming language. It is designed for creating network-centric applications. It is complimentary to and integrated with Java. JavaScript is very easy to implement because it is integrated with HTML. It is open and cross-platform.",
         "timeRequired": 150
       },
       {
         "id": "6",
         "name": "Ruby",
-        "img": "https://www.google.com/search?q=Ruby+code+image&tbm=isch&ved=2ahUKEwj0pfrHjbj6AhWhj9gFHQpfCSMQ2-cCegQIABAA&oq=Ruby+code+image&gs_lcp=CgNpbWcQAzIFCAAQgAQ6BAgjECc6BAgAEEM6BwgAELEDEEM6BAgAEB46BggAEB4QBToECAAQGFC6A1ihN2CeO2gAcAB4AIABigGIAYQLkgEEMC4xMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=95A0Y7TOBqGf4t4Pir6lmAI&bih=688&biw=1536&hl=en-GB#imgrc=cOZFceYtcsygdM",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYgvX63elRPoxbHvZwcfF1K8BBPm-BTKMmbw&usqp=CAU",
         "description":"A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.",
         "timeRequired": 200
       }

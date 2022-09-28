@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import Header from '../Header/Header';
 import Language from '../Language/Language';
+
 import './Activity.css'
 
 const Activity = () => {
@@ -12,20 +14,28 @@ const Activity = () => {
           .then(data => setActivities(data))
     },[])
     return (
+        
+             
+    
         <div className='activity-container'>
+         <div>
+             <Header></Header>
              <div className="activities-container">
-              
-              {
-                 activities.map(pd => <Language  key={pd.id}
-                    pd={pd}></Language>)
-              }
-           </div>
+          
+          {
+             activities.map(pd => <Language  key={pd.id}
+                pd={pd}></Language>)
+          }
+       </div>
+         </div>
+            
        
            <div className="info-container">
              <p>Cart</p>
            </div>
             
         </div>
+    
     );
 };
 
