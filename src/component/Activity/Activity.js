@@ -14,9 +14,6 @@ const Activity = () => {
           .then(data => setActivities(data))
     },[])
     return (
-        
-             
-    
         <div className='activity-container'>
          <div>
              <Header></Header>
