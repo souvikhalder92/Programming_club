@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Info.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFaceGrin,faCode,faContactBook } from '@fortawesome/free-solid-svg-icons'
@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Info = ({info}) => {
     const [time,setTime] = useState(0);
+   
     let total = 0;
 
     for(const activity of info)
@@ -24,17 +25,28 @@ const Info = ({info}) => {
     const timeSet = (time) =>
     {
       
-        setTime(time);
-        localDb(time);
+      
+     setTime(time); 
+     localStorage.setItem('time',JSON.stringify(time)); 
        
 
     }
-    const localDb = (time) =>{
-              
-              const storeDb = localStorage.setItem(time);
-              console.log(storeDb);
-              
-    }
+    useEffect(() => {
+    
+        const preTime = localStorage.getItem('time');
+        if(preTime)
+        {
+            setTime(preTime);
+        }       
+   
+  
+       
+
+    },[time])
+
+ 
+
+
     
     
     
