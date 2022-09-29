@@ -1,18 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Info.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFaceGrin,faCode,faContactBook } from '@fortawesome/free-solid-svg-icons'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Info = ({info}) => {
-
+    const [time,setTime] = useState(0);
     let total = 0;
 
     for(const activity of info)
     {
+    
 
         total = parseInt(total + activity.timeRequired); 
         
     }
+    
+
+    const handleToast = () => toast("Wow!!!You Completed Your Exercise!");
+  
+
+    const timeSet = (time) =>
+    {
+      
+        setTime(time);
+        localDb(time);
+       
+
+    }
+    const localDb = (time) =>{
+              
+              const storeDb = localStorage.setItem(time);
+              console.log(storeDb);
+              
+    }
+    
+    
+    
   
     return (
         <div>
@@ -36,10 +61,10 @@ const Info = ({info}) => {
             <div className="break">
               <h2>Add A Break</h2>
               <div>
-              <button className='btn1'>10min</button>
-              <button className='btn2'>30min</button>
-              <button className='btn3'>45min</button>
-              <button className='btn4'>60min</button>
+              <button onClick={() => timeSet(10)} className='btn1'>10min</button>
+              <button onClick={() => timeSet(30)}className='btn2'>30min</button>
+              <button onClick={() => timeSet(45)} className='btn3'>45min</button>
+              <button onClick={() => timeSet(60)} className='btn4'>60min</button>
              
               </div>
             </div>
@@ -49,11 +74,12 @@ const Info = ({info}) => {
                 <p>Exercise Time: {total}min</p>
               </div>
               <div className="break-time">
-                <p>Break Time:</p>
+                <p>Break Time: {time}min</p>
               </div>
             </div>
             <div className="complete">
-              <button className='btn-com'>Activity Completed</button>
+              <button onClick={handleToast} className='btn-com'>Activity Completed</button>
+              <ToastContainer/>
             </div>
         </div>
     );

@@ -18,7 +18,6 @@ const Activity = () => {
     },[])
      const handleAddToList = (activity) =>
      {
-     console.log(activity);
      const newInfo = [...info,activity];
      setInfo(newInfo);
      
@@ -39,7 +38,6 @@ const Activity = () => {
          </div>
        
            <div className="info-container">
-            <p>{info.length}</p>
               <Info info={info}></Info>
            </div>
             
