@@ -1,7 +1,7 @@
 import React from 'react';
 import './Language.css'
 
-const Language = ({pd}) => {
+const Language = ({pd,handleAddToList}) => {
     const {id,name,description,timeRequired,img} = pd;
     return (
         <div className='program'>
@@ -9,7 +9,7 @@ const Language = ({pd}) => {
            <h2>{name}</h2>
            <p><small>{description.slice(0,100)}...</small></p>
            <p><small>Time Required: {timeRequired} min</small></p>
-           <button className='btn-add'>Add To List</button>
+           <button onClick={() => handleAddToList(pd)} className='btn-add'>Add To List</button>
         </div>
     );
 };

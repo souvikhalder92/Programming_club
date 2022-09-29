@@ -1,0 +1,113 @@
+.info{
+    
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 70px;
+}
+.info p{
+    margin-left: 20px;
+    margin-top: 0;
+
+}
+.details{
+    background-color: rgb(224, 230, 236);
+    display: flex;
+    padding-left: 50px;
+    margin-top: 60px;
+    border: 2px solid white;
+    border: none;
+    box-shadow:2px 5px gray;
+    
+
+}
+.details1{
+    margin-right: 30px;
+}
+.break{
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.break h2{
+    text-align: left;
+}
+.btn1{
+    margin-right: 6px;
+    background-color: gray;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+   
+}
+.btn1:hover{
+    background-color: skyblue;
+}
+.btn2{
+    margin-right: 6px;
+    background-color: gray;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+   
+}
+.btn2:hover{
+    background-color: skyblue;
+}
+.btn3{
+    margin-right: 6px;
+    background-color: gray;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+   
+}
+.btn3:hover{
+    background-color: skyblue;
+}
+.btn4{
+    margin-right: 6px;
+    background-color: gray;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+   
+}
+.btn4:hover{
+    background-color: skyblue;
+}
+.exercise{
+    margin-top: 50px;
+    margin-left: 20px;
+    text-align: left;
+}
+ .time{
+    border: 1px solid whitesmoke;
+    width: 75%;
+    background-color: aliceblue;
+ }
+.time p{
+    margin-left: 10px;
+}
+.break-time{
+    margin-top: 6px;
+    border: 1px solid whitesmoke;
+    width: 75%;
+    background-color: aliceblue;
+ }
+.break-time p{
+    margin-left: 10px;
+}
+.complete{
+    margin-top: 30px;
+}
+.btn-com{
+    border: none;
+    background-color: rgb(179, 179, 250);
+    width: 75%;
+    padding: 8px;
+    color: white;
+    font-weight: bolder;
+}
