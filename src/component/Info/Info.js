@@ -38,23 +38,16 @@ const Info = ({info}) => {
         {
             setTime(preTime);
         }       
-   
-  
        
 
     },[time])
 
- 
 
-
-    
-    
-    
   
     return (
         <div>
              <div className='info'>
-              <h4><FontAwesomeIcon icon={faFaceGrin}></FontAwesomeIcon> Souvik Halder</h4>
+              <h2><FontAwesomeIcon icon={faFaceGrin}></FontAwesomeIcon> Souvik Halder</h2>
               <p><small><FontAwesomeIcon icon={faCode}></FontAwesomeIcon> Fullstack Developer</small></p>
               <p><small><FontAwesomeIcon icon={faContactBook}></FontAwesomeIcon> souvikhalder205@gmail.com</small></p>
             </div>

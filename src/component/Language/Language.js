@@ -8,7 +8,7 @@ const Language = ({pd,handleAddToList}) => {
            <img src={img} alt="" /> 
            <h2>{name}</h2>
            <p><small>{description.slice(0,100)}...</small></p>
-           <p><small>Time Required: {timeRequired} min</small></p>
+           <h4>Time Required: {timeRequired} min</h4>
            <button onClick={() => handleAddToList(pd)} className='btn-add'>Add To List</button>
         </div>
     );

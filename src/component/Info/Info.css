@@ -21,7 +21,7 @@
 
 }
 .details1{
-    margin-right: 30px;
+    margin-right: 50px;
 }
 .break{
     margin-top: 60px;
@@ -86,7 +86,7 @@
  .time{
     border: 1px solid whitesmoke;
     width: 75%;
-    background-color: aliceblue;
+   
  }
 .time p{
     margin-left: 10px;
@@ -95,7 +95,8 @@
     margin-top: 6px;
     border: 1px solid whitesmoke;
     width: 75%;
-    background-color: aliceblue;
+    background-color:gainsboro;
+   
  }
 .break-time p{
     margin-left: 10px;
@@ -110,4 +111,5 @@
     padding: 8px;
     color: white;
     font-weight: bolder;
+    font-size: 18px;
 }
