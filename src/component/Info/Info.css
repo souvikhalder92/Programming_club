@@ -80,12 +80,12 @@
 }
 .exercise{
     margin-top: 50px;
-    margin-left: 20px;
+    margin-left: 25px;
     text-align: left;
 }
  .time{
     border: 1px solid whitesmoke;
-    width: 75%;
+    width: 85%;
    
  }
 .time p{
@@ -94,7 +94,7 @@
 .break-time{
     margin-top: 6px;
     border: 1px solid whitesmoke;
-    width: 75%;
+    width: 85%;
     background-color:gainsboro;
    
  }
